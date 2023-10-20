@@ -21,19 +21,19 @@ useHead({
         v-slot="{ list }"
     >
       <!-- Blog Card  -->
-      <div
+      <UCard
           v-for="blog in list"
           :key="blog._path"
           class="blog-card bg-white rounded-2xl overflow-hidden mb-4"
       >
-        <div class="h-[300px] relative">
+        <figure class="h-[300px] relative">
           <img
               v-if="blog.thumbnail"
               :src="blog.thumbnail"
               :alt="blog.title"
               class="absolute w-full h-full object-cover"
           />
-        </div>
+        </figure>
 
         <div class="blog-card--meta my-4 ml-4">
           <h3 class="text-2xl font-bold">
@@ -46,7 +46,7 @@ useHead({
             >
           </div>
         </div>
-      </div>
+      </UCard>
       <!-- ./ Blog Card  -->
     </ContentList>
     <!-- ./ Blog List  -->
