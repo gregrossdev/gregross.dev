@@ -3,9 +3,8 @@
     <header class="mt-8 mb-4 flex justify-between items-center">
       <div>
         <h1 class="text-2xl font-semibold">
-          <NuxtLink to="/">Nuxt Blog</NuxtLink>
+          <NuxtLink to="/">gregross.dev</NuxtLink>
         </h1>
-        <p class="text-gray-500">Simple blog powered by Nuxt Content</p>
       </div>
 
       <div class="flex items-center">
