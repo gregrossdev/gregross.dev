@@ -12,4 +12,8 @@ export default defineNuxtConfig({
     jsTsFormatResource: true,
     viewTransition: true,
   },
+  ui: {
+    primary: 'green',
+    gray: 'cool'
+  }
 })
