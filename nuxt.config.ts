@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-      '@nuxtjs/tailwindcss',
-      '@nuxt/content'
+      '@nuxt/content',
+      '@nuxt/ui'
   ],
   content: {
     // ... options
