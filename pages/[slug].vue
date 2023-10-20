@@ -8,14 +8,14 @@ const { slug } = useRoute().params;
       <!-- Header  -->
       <header>
         <div class="text-center p-5">
-          <h1 class="text-4xl font-bold lg:w-2/3 mx-auto">{{ doc.title }}</h1>
+          <h1 class="blog-title text-4xl font-bold lg:w-2/3 mx-auto">{{ doc.title }}</h1>
           <p class="text-gray-500 text-sm mt-2">{{ doc.date }}</p>
         </div>
         <img
             v-if="doc.thumbnail"
             :src="doc.thumbnail"
             :alt="doc.title"
-            class="w-full"
+            class="blog-thumbnail w-full"
         />
       </header>
       <!-- ./ Header  -->
@@ -59,4 +59,13 @@ const { slug } = useRoute().params;
 .content h5 {
   @apply text-base font-bold;
 }
+
+.active .blog-thumbnail {
+  view-transition-name: blog-thumbnail;
+}
+
+.active .blog-title {
+  view-transition-name: blog-title;
+}
+
 </style>
