@@ -6,10 +6,10 @@ const { slug } = useRoute().params;
   <article class="bg-white rounded-2xl">
     <ContentDoc :path="`/posts/${slug}`" v-slot="{ doc }">
       <!-- Header  -->
-      <header>
+      <header class="bg-gray-200 dark:bg-gray-900">
         <div class="text-center p-5">
           <h1 class="blog-title text-4xl font-bold lg:w-2/3 mx-auto">{{ doc.title }}</h1>
-          <p class="text-gray-500 text-sm mt-2">{{ doc.date }}</p>
+          <p class="text-sm mt-2">{{ doc.date }}</p>
         </div>
         <img
             v-if="doc.thumbnail"
@@ -21,11 +21,11 @@ const { slug } = useRoute().params;
       <!-- ./ Header  -->
 
       <!-- Content -->
-      <div class="mt-4 content p-5">
+      <section class="content p-5 bg-gray-100 dark:bg-gray-900">
         <!-- Content  -->
         <ContentRenderer :value="doc" />
         <!-- ./ Content  -->
-      </div>
+      </section>
       <!-- ./ Content  -->
     </ContentDoc>
   </article>

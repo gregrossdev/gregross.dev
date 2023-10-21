@@ -28,7 +28,7 @@ useHead({
       <UCard
           v-for="blog in list"
           :key="blog._path"
-          class="blog-card bg-white rounded-2xl overflow-hidden mb-4"
+          class="blog-card bg-gray-200 dark:bg-gray-900 rounded-2xl overflow-hidden mb-4 "
           :class="{active: blogStore.activeArticle && article._id === blogStore.activeArticle._id}"
       >
         <figure class="h-[300px] relative">
@@ -46,9 +46,9 @@ useHead({
           </h2>
           <div class="text-sm text-gray-500 mt-px block">{{ blog.date }}</div>
           <div v-if="blog.tags" class="mt-2 text-xs">
-            <span v-for="tag in blog.tags" class="p-1 rounded bg-gray-100 mr-2">
-              {{ tag }}</span
-            >
+            <UButton v-for="tag in blog.tags" class="mr-2">
+              {{ tag }}
+            </UButton>
           </div>
         </div>
       </UCard>
