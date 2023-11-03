@@ -3,7 +3,7 @@ import ColorModeButton from "./components/ColorModeButton.vue";
 </script>
 
 <template>
-  <div class="max-w-3xl px-4 mx-auto">
+  <div class="max-w-3xl px-4 mx-auto z-20">
     <header class="mt-8 mb-4 flex justify-between items-center bg-gray-200 dark:bg-gray-900 rounded p-4">
       <div>
         <h1 class="text-2xl font-semibold">
@@ -20,6 +20,7 @@ import ColorModeButton from "./components/ColorModeButton.vue";
     <NuxtPage />
     <Particles />
   </div>
+  
 
 </template>
 
