@@ -24,7 +24,7 @@ const { data, pending } = await useAsyncData(
 </script>
 
 <template>
-  <div class="container">
+  <div class="px-4 py-8">
     <div v-if="pending" class="notion">Loading...</div>
   <div v-else>
     <NotionRenderer :blockMap="data" fullPage prism katex :mapPageUrl="mapPageUrl" :pageLinkOptions="pageLinkOptions" />
