@@ -11,18 +11,14 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "nuxt": "^3.8.0",
-    "vue3-particles": "^2.11.1"
+    "@nuxtjs/tailwindcss": "^6.9.4",
+    "nuxt": "^3.8.1",
+    "nuxt-icon": "^0.6.5",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5",
+    "vue3-notion": "^0.1.45"
   },
   "dependencies": {
-    "@nuxt/content": "^2.8.5",
-    "@nuxt/ui": "^2.9.0",
-    "@pinia/nuxt": "^0.5.1",
-    "pinia": "^2.1.7",
-    "tsparticles": "^2.12.0"
-  },
-  "overrides": {
-    "vue": "latest"
+    "@notionhq/client": "^2.2.13"
   }
 }
