@@ -6,13 +6,13 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import { Braces } from 'lucide-svelte';
 	// import AnimatedTabs from '$lib/components/luxe-ui/animated-tabs.svelte'
-	import { UmamiAnalytics } from '@lukulent/svelte-umami';
+	// import { UmamiAnalytics } from '@lukulent/svelte-umami';
 </script>
 
-<UmamiAnalytics
+<!-- <UmamiAnalytics
 	websiteID="43192eba-463d-4ca5-88e7-5f8f0a1871b6"
 	srcURL="https://eu.umami.is/script.js"
-/>
+/> -->
 
 <svelte:head>
 	<script defer data-domain="gregross.dev" src="https://plausible.io/js/script.js"></script>
